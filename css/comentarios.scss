@@ -1,0 +1,89 @@
+@import "../css/estilos.scss";
+
+form {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $color-secundario;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px $color-secundario;
+    align-items: center;
+
+    label {
+        width: 20%;
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+        font-weight: bold;
+        color: oscurecer($color-texto);
+    }
+
+    input[type="text"]{
+        width: 70%;
+        padding: 0.5rem;
+        border: 2px solid $color-texto-secundario;
+        border-radius: 50px;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        color: oscurecer($color-secundario);
+        background-color: $color-texto-secundario;
+        text-align: center;
+
+        &::placeholder {
+            color: oscurecer($color-secundario);
+            text-align: center;
+        }
+    }
+
+    input[type="date"]{
+        width: 40%;
+        padding: 0.5rem;
+        border: 2px solid $color-texto-secundario;
+        border-radius: 50px;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        color: oscurecer($color-secundario);
+        background-color: $color-texto-secundario;
+        text-align: center;
+
+        &::placeholder {
+            color: oscurecer($color-secundario);
+            text-align: center;
+        }
+    }
+
+    textarea{
+        width: 70%;
+        padding: 0.5rem;
+        border: 2px solid $color-texto-secundario;
+        border-radius: 50px;
+        margin-bottom: 1rem;
+        font-size: 1.2em;
+        color: oscurecer($color-secundario);
+        background-color: $color-texto-secundario;
+        text-align: center;
+        resize: none;
+
+        &::placeholder {
+            color: oscurecer($color-secundario);
+            text-align: center;
+        }
+    }
+
+    button {
+        width: 25%;
+        padding: 0.5rem;
+        border: 2px solid $color-texto-secundario;
+        border-radius: 50px;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        color: $color-texto-secundario;
+        background-color: $color-botones;
+        text-align: center;
+        cursor: pointer;
+        margin-left: 5%;
+    }
+}

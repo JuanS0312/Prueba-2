@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Animales Salvajes</title>
+    <link rel="stylesheet" href="../css/fetch.css">
+    <link rel="shortcut icon" href="img/huella.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="fetch.html">Mas perros</a></li>
+                <li><a href="comentarios.html">Comentarios</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="cont">
+            <h1>Imágenes de perros</h1>
+            <label for="search">Buscar:</label>
+            <input type="text" id="perro" onblur="BuscarPerro()" placeholder="Escribe la raza del perro en ingles">
+            <div class="contenedor">
+                <div class="imagenes" id="imagen"></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="parrafo">Derechos de Autor Juan Pablo Suárez; 2023 Animales Salvajes</p>
+    </footer>
+    <script src="../js/fetch.js"></script>
+
+</body>

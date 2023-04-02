@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/huella.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/comentarios.css">
+    <title>Comentarios</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="fetch.html">Mas perros</a></li>
+                <li><a href="comentarios.html">Comentarios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="comentarios" id="comentarios">
+        </div>
+        <form action="">
+            <label for="usuario">Usuario:</label>
+            <input type="text" id="usuario" placeholder="Escribe tu nombre de usuario">
+
+            <label for="comentario">Comentario:</label>
+            <textarea name="comentario" id="comentario" cols="30" rows="2" placeholder="Escribe tu comentario"></textarea>
+
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" value="">
+            <button id="btnComentario" onclick="agregarComentario()">Crear comentario</button>
+        </form>
+    </main>
+    <script src="../js/clase.js"></script>
+    <script src="../js/comentarios.js"></script>
+</body>
+</html>

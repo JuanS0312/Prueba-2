@@ -1,0 +1,69 @@
+@import "../css/estilos.scss";
+
+main {
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 74vh;
+
+    h1 {
+        color: oscurecer($color-secundario);
+        font-size: 2em;
+        text-align: center;
+    }
+
+    label {
+        color: oscurecer($color-secundario);
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .cont {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+
+        input[type="text"] {
+            outline: none;
+            border: none;
+            font-size: 1.1em;
+            border-radius: 23px;
+            width: 27%;
+            background-color: $color-terciario;
+            padding: 2px 0.5rem;
+
+            &::placeholder {
+                color: $color-texto;
+                text-align: center;
+            }
+        }
+    }
+
+}
+.imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    background-color: $color-secundario;
+    color: $color-texto-secundario;
+    padding: 1rem;
+    margin: 1rem auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+
+    img {
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        margin: 0.6rem 1rem ;
+        border-radius: 1rem;
+    }
+}
+
